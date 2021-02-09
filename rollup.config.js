@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import { premove } from 'premove';
+import size from 'rollup-plugin-size';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -48,6 +49,7 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+		size(),
 		!production && serve(),
 		!production && livereload('public'),
 		production && terser()

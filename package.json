@@ -17,6 +17,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "rollup-plugin-size": "^0.2.2",
     "sirv-cli": "^1.0.0",
     "svelte-loadable": "^1.5.0",
     "svelte-spa-router": "^2.2.0"
