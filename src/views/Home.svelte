@@ -4,5 +4,7 @@
 </script>
 
 <Wrap>
-  <Loadable loader={() => import('../components/SayHi.svelte')} />
+  <Loadable loader={() => import('../components/SayHi.svelte')}>
+    <div slot="loading">Loading...</div>
+  </Loadable>
 </Wrap>

@@ -4,5 +4,7 @@
 </script>
 
 <Wrap>
-  <Loadable loader={() => import('../components/AboutMe.svelte')} />
+  <Loadable loader={() => import('../components/AboutMe.svelte')}>
+    <div slot="loading">Loading...</div>
+  </Loadable>
 </Wrap>
